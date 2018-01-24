@@ -1,0 +1,8 @@
+<html><body>
+<h1>Task</h1>
+<ul>
+    {% for d in tasks %}
+    <li>Task of {{ d.userid.username }} named as <span>{{ d.taskname }}</span>, having duration <span>{{ d.duration }}</span> </li>
+    {% endfor %}
+</ul>
+</body></html>
